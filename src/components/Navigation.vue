@@ -8,7 +8,7 @@
      app
      temporary
      height="800"
-     
+     style="z-index: 9999;"
      
      >
      <v-list>
@@ -54,7 +54,9 @@
      :height=barSize
      flat
      color="black"
+     class="fix"
      >
+     
 <v-col>
     <v-row justify="center">
     <img v-if="!isMobile" :class=imgStyle :src=imgSize width="400" height="380" style="z-index:10;">
@@ -290,6 +292,10 @@ export default {
 
 <style scoped>
 
+    .fix {
+        position: relative;
+        z-index: 30;
+    }
 .title{
     color:#211004 !important;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
