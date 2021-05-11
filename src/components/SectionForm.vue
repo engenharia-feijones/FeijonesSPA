@@ -145,7 +145,7 @@
     </v-dialog>
   </section>
 </template>
-<script src="https://smtpjs.com/v3/smtp.js" ></script>
+<script src="https://smtpjs.com/v3/smtp.js" defer></script>
 <script>
 export default {
   name: "SectionForm",
