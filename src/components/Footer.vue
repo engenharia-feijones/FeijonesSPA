@@ -82,7 +82,7 @@
             </v-row>
        <v-col class="mt-7 endDesktop" cols="11">
             <v-row  justify="end">
-                <p style="color:#f4f4cc" >Endereço: Av. Urnana, Ponto Certo</p>
+                <p style="color:#f4f4cc" >Endereço: Av. Urbana, Ponto Certo</p>
             </v-row>
        </v-col>
         
@@ -105,19 +105,22 @@ export default {
         icons:[
                 {
                     icon:"mdi-facebook", color:"white",btnColor:"#041454", cta: () => {
-                        alert("Em breve...")
+                         const url = `https://www.facebook.com/profile.php?id=100066475050399`
+                        window.open(url, '_blank')
                     }
+                    
                 },
                 { 
                     icon:"mdi-whatsapp", color:"white", btnColor:"green", cta: () => {
-                        var url = `https://api.whatsapp.com/send?phone=${5571999992891}&text=Olá, gostaria de ver o cardapio!`
+                        const url = `https://api.whatsapp.com/send?phone=${5571999992891}&text=Olá, gostaria de ver o cardapio!`
                         window.open(url, '_blank')
                     }
                 },
                 {
                     
                     icon:"mdi-instagram", color:"white",btnColor:"#FD1D1D", cta: () => {
-                        alert("Em breve...")
+                        const url = `https://www.instagram.com/feijones_oficial/`
+                        window.open(url, '_blank')
                     }
                 },
                 {
