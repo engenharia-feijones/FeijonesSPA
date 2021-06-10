@@ -127,6 +127,12 @@ export default {
                     icon:"mdi-twitter", color:"white",btnColor:"#1ca4e0", cta: () => {
                          alert("Em breve...")
                     }
+                },
+                {
+                    icon:"mdi-youtube", color:"red",btnColor:"white", cta: () => {
+                         const url = `https://www.youtube.com/channel/UCJ8CjC_63ylYx3Rj3U9LyUg`
+                         window.open(url, '_blank')
+                    }
                 }
              ]
     }),
