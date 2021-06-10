@@ -44,8 +44,8 @@
          </v-list-item>
         </v-list>
           <v-divider/>
-        <img class="mt-9 ml-8" width="190" height="200" src="@/assets/logoSVG.svg" alt="a">
-        <v-icon src="@/assets/feijaoIcon.svg" > </v-icon>
+        <img class="mt-9 ml-8" width="190" height="200" src="@/assets/appBarLogo.svg" alt="a">
+        <v-icon src="@/assets/appBarLogo.svg" > </v-icon>
      </v-navigation-drawer>
   </div>
 
@@ -59,7 +59,7 @@
      
 <v-col>
     <v-row justify="center">
-    <img v-if="!isMobile" :class=imgStyle :src=imgSize width="400" height="380" style="z-index:10;">
+    <img v-if="!isMobile" :class=imgStyle :src=imgSize width="530" height="260" style="z-index:10;">
     <img v-else :class=imgStyle :src=imgSize width="200" height="200" style="z-index:10;">
         <span v-if="!isMobile" class="dotDesktop"></span>
         <span v-else class="dotMobile"></span>
@@ -131,7 +131,7 @@
 
 
     <v-row justify="start">
-     <img v-if=!isMobile height="100" src="@/assets/logoFooterMob.png" > 
+     <img v-if=!isMobile height="75" src="@/assets/logoAppBar.svg" > 
     </v-row>
 
     <v-row class="mb-3" align="end" v-if="!isMobile" justify="space-between" >
@@ -156,7 +156,7 @@
             <v-app-bar-nav-icon @click.stop="toTop()">
             </v-app-bar-nav-icon>
      </v-btn >
-     <img  height="75" src="@/assets/logoFooterMob.png" > 
+     <img  height="75" src="@/assets/logoAppBar.svg" > 
        <v-btn class="mr-2" color="rgba(90,13,4,255)" dark fab >
       <v-icon>mdi-cart</v-icon>
      </v-btn>
@@ -176,12 +176,12 @@ export default {
         drawer:false,
         img:   [
             { 
-              src: require ('@/assets/logoSVG.svg'),
+              src: require ('@/assets/newLogoCold.svg'),
               width:"",
               hight:"220"
               
             },
-            { src: require ('@/assets/logoSVG.svg'),
+            { src: require ('@/assets/newLogoCold.svg'),
               width:"200000",
               hight:"250"
             }
@@ -320,8 +320,8 @@ export default {
 }
 
 .dotDesktop{
-    height: 309px;
-    width: 320px;
+    height: 260px;
+    width: 300px;
     border-radius:50%;
     display: inline-block;
     background: black;

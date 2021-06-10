@@ -34,7 +34,7 @@
          
 
             <v-row justify="center" v-if="isMobile">
-              <img height="140" width="140" src="@/assets/logoSVG.svg">
+              <img height="140" width="140" src="@/assets/newLogoCold.svg">
             </v-row>
           
           <div class="endereco">
@@ -50,7 +50,7 @@
   
     <v-row justify="space-between">
       
-                <img  class="ml-6" width="200" height="200" src="@/assets/logoSVG.svg">
+                <img  class="ml-6" width="200" height="200" src="@/assets/newLogoCold.svg">
    
         <v-col align="end" class="mt-5">
             <v-btn text color="#f4f4cc" @click="$vuetify.goTo('#form')">
