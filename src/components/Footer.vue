@@ -125,7 +125,8 @@ export default {
                 },
                 {
                     icon:"mdi-twitter", color:"white",btnColor:"#1ca4e0", cta: () => {
-                         alert("Em breve...")
+                         const url = `https://twitter.com/FeijonesOficial`
+                         window.open(url,'_blank')
                     }
                 },
                 {
