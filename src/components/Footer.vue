@@ -119,7 +119,7 @@ export default {
                 {
                     
                     icon:"mdi-instagram", color:"white",btnColor:"#FD1D1D", cta: () => {
-                        const url = `https://www.instagram.com/feijonesoficial/`
+                        const url = `https://www.instagram.com/feijones_oficial/`
                         window.open(url, '_blank')
                     }
                 },
