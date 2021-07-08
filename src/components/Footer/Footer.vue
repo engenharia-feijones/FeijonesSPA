@@ -7,11 +7,6 @@
                 <SocialIcons />
             </div>
         </div>
-        <!-- <div class="flex-1 mt-3">
-            <h1 class="text-white text-left pl-5">Assine nossa Newsletter</h1>
-            <input type="email" placeholder="Seu e-mail" class="ml-5 mb-1 p-2 outline-none inline rounded-l-md"/>
-            <div class="inline">Assinar</div>
-        </div> -->
     </section>
 </template>
 
