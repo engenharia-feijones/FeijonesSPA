@@ -18,7 +18,14 @@ const router = createRouter({
 router.beforeEach(async (to, from, next) => {
   if (to.name === "Home" && !from.name) {
     const { data } = await axios.get("https://api.db-ip.com/v2/free/self");
-    const ipAddress = { ip: data.ipAddress, date: "" };
+    const ipAddress = { 
+      ip: data.ipAddress,
+      latitude: data.lat.toString(),
+      longitude : data.lon.toString(),
+      city: data.city,
+      region: data.region,
+      date: "",
+    };
     axios
       .post("https://ssacapsapi.azurewebsites.net/api/AcessIP", ipAddress)
       .then(console.log);
