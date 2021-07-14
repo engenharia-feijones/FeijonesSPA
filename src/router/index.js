@@ -18,20 +18,26 @@ const router = createRouter({
 router.beforeEach(async (to, from, next) => {
   if (to.name === "Home" && !from.name) {
     const { data } = await axios.get("https://api.db-ip.com/v2/free/self");
-    const ipAddress = { 
-      ip: data.ipAddress,
-      latitude: data.lat.toString(),
-      longitude : data.lon.toString(),
-      city: data.city,
-      region: data.region,
-      date: "",
-    };
-    axios
-      .post("https://ssacapsapi.azurewebsites.net/api/AcessIP", ipAddress)
-      .then(console.log);
+    const ipAddress = { ip: data.ipAddress, date: "" };
+    axios.post("https://ssacapsapi.azurewebsites.net/api/AcessIP", ipAddress);
   }
 
   next();
 });
 
+// router.beforeEach(async (to, from, next) => {
+//   if (to.name === "Home" && !from.name) {
+//     const { data } = await axios.get("http://ip-api.com/json");
+//     const ipAddress = {
+//       ip: data.query,
+//       latitude: data.lat?.toString(),
+//       longitude: data.lon?.toString(),
+//       city: data.city,
+//       region: data.region,
+//     };
+//     axios.post("https://traceripapi.azurewebsites.net/api/AcessIP", ipAddress);
+//   }
+
+//   next();
+// });
 export default router;
